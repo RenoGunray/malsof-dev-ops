@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+}
+
+body {
+    width: 95%;
+    margin: auto
+}
+
+@import "major-dependacies/animations";
+
+@import "selectors/variables";
+@import "selectors/utilities";
+@import "selectors/dependacies";
+
+@import "layouts/about";
+@import "layouts/meetteam";
+@import "layouts/navbar";
+@import "layouts/services";
+@import "layouts/projects";
+@import "layouts/footer";
+
+
+@import "major-dependacies/buttons";
+@import "major-dependacies/grid";
+@import "major-dependacies/popups";

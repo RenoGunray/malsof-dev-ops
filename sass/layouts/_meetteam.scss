@@ -1,0 +1,32 @@
+.section__meetteam{
+    padding: 4rem;
+}
+
+.team-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem;
+    p {
+        margin-top: 4rem;
+        
+        span {
+            display: inline-block;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+    }
+
+    img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 20rem;
+    }
+
+    .devider {
+        border: 2px solid $color-purple;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}

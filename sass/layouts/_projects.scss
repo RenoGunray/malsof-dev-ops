@@ -1,0 +1,14 @@
+.section__projects {
+    padding: 4rem;
+}
+
+.project-img{
+    img {
+        width: 125%;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.margin-gap-large {
+    margin-top: 20rem;
+}
+
+.copper-plate {
+    font-family: copperplate gothic;
+}
+
+.letter-spacing {
+    letter-spacing: 2rem;
+}
+
+.small-letter-spacing {
+    letter-spacing: 1rem;
+}
+
+.text-smoke {
+    color: $color-whitesmoke;
+}
+
+.text-shadow {
+    text-shadow: .5rem .5rem 2rem black;
+}
+
+.ink-free {
+    font-family: ink free;
+}
+
+.margin-left-large {
+    margin-left: 25rem;
+}
+
+.margin-left-small {
+    margin-left: 5rem;
+}
+.margin-bottom-small {
+    margin-bottom: 1rem;
+}
+
+.small-padding{
+    padding: 3rem;
+}
+
+.font-large{
+    font-size: 5rem;
+}
+
+.copy-right{
+    margin-top: 20rem;
+}
+
+.paragraph {
+    font-size: 2rem;
+    color: $color-grey-dark;
+}
+
+.font-sans {
+    font-family: sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-special-underline{
+    border-bottom: 2px solid $color-grey-dark;
+}
