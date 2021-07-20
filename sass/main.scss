@@ -7,6 +7,31 @@
 
 html {
     font-size: 62.2%;
+
+    /*
+    when the screen is  600 pixels wide decrease font size to 25%
+    ===============================================================================================
+    */
+
+    @media (max-width: 600px) {
+        font-size: 25%;
+    }
+
+
+    @media (max-width: 700px) {
+        font-size: 31%;
+    }
+
+    /*
+    when the screen is  800 pixels wide decrease font size to 34%
+    ===============================================================================================
+    */
+
+    @media (max-width: 900px) {
+        font-size: 34%;
+    }
+
+
 }
 
 body {
