@@ -1,6 +1,14 @@
 .section__about {
     padding: 4rem;
 
+    @media (max-width: 600px) {
+        margin-bottom: 40rem;
+    }
+
+    @media (max-width: 700px) {
+        margin-bottom: 45rem;
+    }
+
     &__heading {
 
         .title {
