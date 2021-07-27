@@ -1,11 +1,28 @@
 .section__meetteam{
     padding: 4rem;
+
+    @media (max-width: 1000px) {
+        padding: 5rem;
+    }
+
 }
 
 .team-card {
     display: flex;
     justify-content: space-around;
     padding: 10rem;
+
+    .paragraph {
+        @media (max-width: 1000px) {
+            font-size: 1.7rem;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 2rem;
+        }
+
+    }
+
     p {
         margin-top: 4rem;
         
@@ -22,11 +39,22 @@
         width: 20rem;
         height: 20rem;
         border-radius: 20rem;
+        
+        @media (max-width: 1000px) {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 15rem;
+        }
     }
 
     .devider {
         border: 2px solid $color-purple;
         margin-left: 4rem;
         margin-right: 4rem;
+
+        @media (max-width: 1000px) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
 }
