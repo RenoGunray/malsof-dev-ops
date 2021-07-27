@@ -3,9 +3,13 @@
 }
 
 .project-img{
+    align-items: center;
+    padding: 2rem;
+
     img {
         width: 125%;
         transition: all .3s;
+        border-radius: 4px;
 
         @media (max-width: 600px) {
             width: 90%;
