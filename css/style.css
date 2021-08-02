@@ -94,6 +94,10 @@ body {
   letter-spacing: 2rem;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .small-letter-spacing {
   letter-spacing: 1rem;
 }
@@ -108,6 +112,10 @@ body {
 
 .ink-free {
   font-family: ink free;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .margin-left-large {
@@ -150,6 +158,18 @@ body {
 
 .text-special-underline {
   border-bottom: 2px solid #777;
+}
+
+.gradient-title {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-image: linear-gradient(180deg, #A445B2, #D41872, #FF0066);
+  font-family: Segoe UI;
+  font-style: italic;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .card {
@@ -404,7 +424,8 @@ body {
   }
 }
 .team-card .devider {
-  border: 2px solid #8E37D7;
+  border-left: 4px solid #8E37D7;
+  border-radius: 4rem;
   margin-left: 4rem;
   margin-right: 4rem;
 }
@@ -425,14 +446,15 @@ body {
 }
 .navbar__logo {
   float: left;
+  padding: 1rem;
+  margin-left: 3rem;
 }
 .navbar__logo img {
-  width: 12rem;
-  transform: scale(1.3);
+  width: 4rem;
   transition: all 0.3s;
 }
 .navbar__logo img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   cursor: pointer;
 }
 .navbar::after {
@@ -468,7 +490,7 @@ header .brand {
   text-align: center;
 }
 header .brand__head {
-  animation: moveInLeft 0.8s ease-in;
+  animation: moveInLeft 1.5s ease-in;
 }
 header .brand__head--1, header .brand__head--2 {
   display: inline-block;
@@ -477,16 +499,16 @@ header .brand__head--1, header .brand__head--2 {
   font-size: 4rem;
 }
 header .horizontal-divider {
-  border: 2px solid #ededee;
+  border-bottom: 4px solid #ededee;
   border-radius: 4rem;
   width: 20%;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  animation: phaseAppear 0.5s ease-in;
+  animation: phaseAppear 0.9s ease-in;
 }
 header .header__slogan {
-  animation: moveInRight 0.8s ease-in;
+  animation: moveInRight 1.5s ease-in;
 }
 
 .services {
@@ -512,6 +534,7 @@ header .header__slogan {
   background-image: linear-gradient(180deg, #A445B2, #D41872, #FF0066);
   font-family: Segoe UI;
   font-style: italic;
+  border-radius: 3px;
 }
 .services__onoffer {
   width: 90%;
@@ -639,11 +662,23 @@ header .header__slogan {
   visibility: visible;
 }
 .image__popup-1--view {
-  width: 70%;
+  width: 75%;
   margin: auto;
+}
+@media (max-width: 600px) {
+  .image__popup-1--view {
+    width: 100%;
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
 }
 .image__popup-1--view img {
   width: 95%;
+}
+@media (max-width: 600px) {
+  .image__popup-1--view img {
+    width: 100%;
+  }
 }
 
 .image__popup-2 {
@@ -664,11 +699,23 @@ header .header__slogan {
   visibility: visible;
 }
 .image__popup-2--view {
-  width: 70%;
+  width: 75%;
   margin: auto;
+}
+@media (max-width: 600px) {
+  .image__popup-2--view {
+    width: 100%;
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
 }
 .image__popup-2--view img {
   width: 95%;
+}
+@media (max-width: 600px) {
+  .image__popup-2--view img {
+    width: 100%;
+  }
 }
 
 .image__popup-3 {
@@ -689,11 +736,23 @@ header .header__slogan {
   visibility: visible;
 }
 .image__popup-3--view {
-  width: 70%;
+  width: 75%;
   margin: auto;
+}
+@media (max-width: 600px) {
+  .image__popup-3--view {
+    width: 100%;
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
 }
 .image__popup-3--view img {
   width: 95%;
+}
+@media (max-width: 600px) {
+  .image__popup-3--view img {
+    width: 100%;
+  }
 }
 
 .close {
@@ -707,6 +766,11 @@ header .header__slogan {
   display: inline-block;
   text-decoration: none;
   float: right;
+}
+.close::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */
