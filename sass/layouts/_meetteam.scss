@@ -48,7 +48,8 @@
     }
 
     .devider {
-        border: 2px solid $color-purple;
+        border-left: 4px solid $color-purple;
+        border-radius: 4rem;
         margin-left: 4rem;
         margin-right: 4rem;
 
