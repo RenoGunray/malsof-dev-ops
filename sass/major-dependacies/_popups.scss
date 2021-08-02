@@ -17,10 +17,22 @@
     }
 
     &--view {
-        width: 70%;
+        width: 75%;
         margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
         img {
             width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
         }
     }
 }
@@ -45,10 +57,22 @@
     }
 
     &--view {
-        width: 70%;
+        width: 75%;
         margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
         img {
             width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
         }
     }
 }
@@ -74,10 +98,22 @@
     }
 
     &--view {
-        width: 70%;
+        width: 75%;
         margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
         img {
             width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
         }
     }
 }
@@ -88,11 +124,21 @@
     padding-left: 1rem;
     padding-right: 1rem;
     //position: relative;
-        font-size: 5rem;
-        font-weight: bold;
-        color: $color-whitesmoke;
-        display: inline-block;
-        text-decoration: none;
-        float: right;
-        //position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    color: $color-whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    //position: absolute;
+
+    @mixin clearfix {
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    @include clearfix;
 }
