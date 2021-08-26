@@ -2,6 +2,12 @@
     padding: 4rem;
 }
 
+.description {
+
+    margin-top: 25rem;
+
+}
+
 .project-img{
     align-items: center;
     padding: 2rem;
@@ -23,4 +29,42 @@
             transform: scale(1.05) translateY(-.5rem);
         }
     }
+}
+
+.composition-streem {
+    position: relative;
+    &__photo {
+        box-shadow: 0 .5rem 4rem rgba($color-black, .4);
+        //border-radius: .2rem;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &--p1 {
+            left: 20%;
+            top: 5rem
+            //animation: phaseAppear 1s ease-in;
+        }
+        &--p2 {
+            left: 3rem;
+            top: 2.5rem;
+            //animation: phaseAppear .5s ease-in;
+        }
+        &--p3 {
+            left: 0;
+            //animation: phaseAppear .8s ease-in;
+        }
+
+        &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+
 }
