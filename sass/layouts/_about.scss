@@ -37,17 +37,17 @@
         &--p1 {
             left: 0;
             top: -2rem;
-            animation: phaseAppear 1s ease-in;
+            //animation: phaseAppear 1s ease-in;
         }
         &--p2 {
             right: 0;
             top: 2rem;
-            animation: phaseAppear .5s ease-in;
+            //animation: phaseAppear .5s ease-in;
         }
         &--p3 {
             left: 20%;
             top: 10rem;
-            animation: phaseAppear .8s ease-in;
+            //animation: phaseAppear .8s ease-in;
         }
 
         &:hover {
