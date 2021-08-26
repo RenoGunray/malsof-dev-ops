@@ -118,6 +118,357 @@
     }
 }
 
+.image__popup-4 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-5 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-6 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-7 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-8 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-9 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-10 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-11 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.image__popup-12 {
+    background: rgba($color-dark-blue, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    padding: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--view {
+        width: 75%;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 35rem;
+            margin-bottom: 35rem;
+        }
+
+        img {
+            width: 95%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
 .close {
     border: 1px solid $color-whitesmoke;
     border-radius: 3px;
