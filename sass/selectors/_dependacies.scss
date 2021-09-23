@@ -1,53 +1,39 @@
-.card {
+.cus-card {
     perspective: 150rem;
     -moz-perspective: 150rem;
+    height: 60rem;
     position: relative;
-    height: 60vh;
     
     @media (max-width: 600px) {
-        height: 50vh;
+        
         margin-bottom: 10rem;
         margin-left: 23%;
     }
     
     
     @media (max-width: 700px) {
-        height: 65vh;
+        
         margin-bottom: 13rem;
         margin-left: 23%;
     }
     
     @media (max-width: 900px) {
-        height: 55vh;
+        
         margin-bottom: 13rem;
     }
 
     &__side{
         //padding: 3rem;
-        width: 85%;
+        width: 80%;
+        height: 60rem;
         margin: auto;
         opacity: 0.9;
-        box-shadow: 6rem 2rem rgba(0, 0, 0, 0.479);
+        box-shadow: 3rem 2rem rgba(0, 0, 0, 0.479);
         transition: all .7s ease;
-        height: 60vh;
         position: absolute;
         top: 0;
         left: 0;
         backface-visibility: hidden;
-
-        @media (max-width: 600px) {
-            height: 65vh;
-            //width: 85%; 
-        }
-
-        @media (max-width: 700px) {
-            height: 65vh;
-            //width: 75%;
-        }
-
-        @media (max-width: 900px) {
-            height: 60vh;
-        }
 
         &--front{
             img {

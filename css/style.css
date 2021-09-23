@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 62.2%;
+  font-size: 55%;
   scroll-behavior: smooth;
   /*
   when the screen is  600 pixels wide decrease font size to 25%
@@ -79,6 +79,11 @@ body {
 }
 .title {
   font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.title-header {
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -172,93 +177,75 @@ body {
   margin-top: 2rem;
 }
 
-.card {
+.cus-card {
   perspective: 150rem;
   -moz-perspective: 150rem;
+  height: 60rem;
   position: relative;
-  height: 60vh;
 }
 @media (max-width: 600px) {
-  .card {
-    height: 50vh;
+  .cus-card {
     margin-bottom: 10rem;
     margin-left: 23%;
   }
 }
 @media (max-width: 700px) {
-  .card {
-    height: 65vh;
+  .cus-card {
     margin-bottom: 13rem;
     margin-left: 23%;
   }
 }
 @media (max-width: 900px) {
-  .card {
-    height: 55vh;
+  .cus-card {
     margin-bottom: 13rem;
   }
 }
-.card__side {
-  width: 85%;
+.cus-card__side {
+  width: 80%;
+  height: 60rem;
   margin: auto;
   opacity: 0.9;
-  box-shadow: 6rem 2rem rgba(0, 0, 0, 0.479);
+  box-shadow: 3rem 2rem rgba(0, 0, 0, 0.479);
   transition: all 0.7s ease;
-  height: 60vh;
   position: absolute;
   top: 0;
   left: 0;
   backface-visibility: hidden;
 }
-@media (max-width: 600px) {
-  .card__side {
-    height: 65vh;
-  }
-}
-@media (max-width: 700px) {
-  .card__side {
-    height: 65vh;
-  }
-}
-@media (max-width: 900px) {
-  .card__side {
-    height: 60vh;
-  }
-}
-.card__side--front {
+.cus-card__side--front {
   text-align: center;
   background-image: linear-gradient(180deg, rgba(44, 216, 213, 0.6), rgba(107, 141, 214, 0.6), rgba(142, 55, 215, 0.6));
 }
-.card__side--front img {
+.cus-card__side--front img {
   width: 20rem;
   margin-top: 5rem;
 }
 @media (max-width: 700px) {
-  .card__side--front {
+  .cus-card__side--front {
     margin-top: 10rem;
   }
 }
-.card__side--front .title {
+.cus-card__side--front .title {
   margin-top: 3rem;
 }
-.card__side--back {
+.cus-card__side--back {
   background-color: #050C1E;
   transform: rotateY(180deg);
 }
 @media (max-width: 700px) {
-  .card__side--back {
+  .cus-card__side--back {
     margin-top: 10rem;
   }
 }
-.card__side p {
+.cus-card__side p {
   font-family: Agency FB;
   color: #ededee;
   font-size: 2.5rem;
 }
-.card:hover .card__side--front {
+.cus-card:hover .cus-card__side--front {
   transform: rotateY(180deg);
 }
-.card:hover .card__side--back {
+.cus-card:hover .cus-card__side--back {
   transform: rotateY(0);
 }
 
@@ -433,7 +420,7 @@ body {
   }
 }
 
-.navbar {
+.cus-navbar {
   width: 95%;
   background-color: rgba(237, 237, 238, 0.856);
   position: fixed;
@@ -441,35 +428,35 @@ body {
   overflow: hidden;
   z-index: 999;
 }
-.navbar__logo {
+.cus-navbar__logo {
   float: left;
   padding: 1rem;
   margin-left: 3rem;
 }
-.navbar__logo img {
+.cus-navbar__logo img {
   width: 4rem;
   transition: all 0.3s;
 }
-.navbar__logo img:hover {
+.cus-navbar__logo img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-.navbar::after {
+.cus-navbar::after {
   content: "";
   display: table;
   clear: both;
 }
-.navbar__items {
+.cus-navbar__items {
   font-size: 1.5rem;
   text-align: center;
   float: right;
   margin-top: 2.2rem;
 }
-.navbar__items__group .item {
+.cus-navbar__items__group .item {
   list-style: none;
   display: inline-block;
 }
-.navbar__items__group .item a {
+.cus-navbar__items__group .item a {
   text-decoration: none;
   font-family: sans-serif;
 }
@@ -513,7 +500,7 @@ header .header__slogan {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 }
 .services__titlebar {
   display: flex;
@@ -546,10 +533,20 @@ header .header__slogan {
 .description {
   margin-top: 25rem;
 }
+@media (max-width: 600px) {
+  .description {
+    margin-top: 35rem;
+  }
+}
 
 .project-img {
   align-items: center;
   padding: 2rem;
+}
+@media (max-width: 600px) {
+  .project-img {
+    padding: 6rem;
+  }
 }
 .project-img img {
   width: 125%;
