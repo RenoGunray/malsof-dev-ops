@@ -268,32 +268,14 @@ body {
   }
 }
 
-.fa {
+.cus-icon {
   padding: 20px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
 }
-.fa a {
-  color: #ededee;
-}
-.fa .fa-facebook {
-  background: #3B5998;
-}
-.fa .fa-facebook:hover {
-  opacity: 0.7;
-}
-.fa .fa-instagram {
-  background: #3B5998;
-}
-.fa .fa-instagram:hover {
-  opacity: 0.7;
-}
-.fa .fa-whatsapp {
-  background: #3B5998;
-}
-.fa .fa-whatsapp:hover {
+.cus-icon i:hover {
   opacity: 0.7;
 }
 
@@ -1133,5 +1115,67 @@ header .header__slogan {
   display: table;
   clear: both;
 }
+
+/*POP UP MODAL CSS MOCKUP*/
+.model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #f37123;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.model.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.model-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f37123;
+}
+
+.model-header .title {
+  font-size: 1.23rem;
+  font-weight: bold;
+}
+
+.model-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.model-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*END POP UP MODAL CSS MOCKUP*/
 
 /*# sourceMappingURL=style.css.map */

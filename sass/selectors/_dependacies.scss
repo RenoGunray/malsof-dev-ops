@@ -96,36 +96,15 @@
     }
 }
 
-.fa {
+.cus-icon {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
 
-    a {
-        color: $color-whitesmoke;
-    }
-
-    .fa-facebook {
-        background: #3B5998;
-
-        &:hover{
-            opacity: 0.7;
-        }
-    }
-
-    .fa-instagram {
-        background: #3B5998;
-
-        &:hover{
-            opacity: 0.7;
-        }
-    }
-
-    .fa-whatsapp {
-        background: #3B5998;
-
+    i {
+        
         &:hover{
             opacity: 0.7;
         }

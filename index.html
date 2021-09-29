@@ -10,6 +10,8 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
+    <script src="js/popup.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     
     <!-- main stylesheet -->
@@ -70,19 +72,23 @@
             </div>
             <div class="col-1-of-2">
                 <div class="composition">
-                    <a href="#image-popup-1">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup">
                         <img src="images/malsoftech-01.jpg" alt="photo-1" class="composition__photo composition__photo--p1">
                     </a>
 
-                    <a href="#image-popup-2">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup2">
                         <img src="images/malsof_code.jpg" alt="photo-2" class="composition__photo composition__photo--p2">
                     </a>
 
-                    <a href="#image-popup-3">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup3">
                         <img src="images/SL-073119-22070-01.jpg" alt="photo-3" class="composition__photo composition__photo--p3">
                     </a>
                 </div>
             </div>
+
+
+            
+
         </div>
     </section>
 
@@ -205,15 +211,15 @@
             <div class="col-lg-3 col-sm-6 col-xm-12">
                 <div class="project-img">
                     <div class="composition-streem">
-                        <a href="#image-popup-6">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup6">
                             <img src="images/orphanage_desc.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p1">
                         </a>
 
-                        <a href="#image-popup-5">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup5">
                             <img src="images/orphanage_images.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p2">
                         </a>
 
-                        <a href="#image-popup-4">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup4">
                             <img src="images/orphanage_home.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p3">
                         </a>
                     </div>
@@ -228,15 +234,15 @@
             <div class="col-lg-3 col-sm-6 col-xm-12">
                 <div class="project-img">
                     <div class="composition-streem">
-                        <a href="#image-popup-9">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup9">
                             <img src="images/dom_location.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p1">
                         </a>
 
-                        <a href="#image-popup-8">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup8">
                             <img src="images/dom_alt_img.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p2">
                         </a>
 
-                        <a href="#image-popup-7">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup7">
                             <img src="images/dom_home.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p3">
                         </a>
                     </div>
@@ -251,15 +257,15 @@
             <div class="col-lg-3 col-sm-6 col-xm-12">
                 <div class="project-img">
                     <div class="composition-streem">
-                        <a href="#image-popup-12">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup12">
                             <img src="images/nkm_contact.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p1">
                         </a>
 
-                        <a href="#image-popup-11">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup11">
                             <img src="images/nkm_images.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p2">
                         </a>
 
-                        <a href="#image-popup-10">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#imagepopup10">
                             <img src="images/nkm_home.jpg" class="margin-bottom-small composition-streem__photo composition-streem__photo--p3">
                         </a>
                     </div>
@@ -318,120 +324,248 @@
 <!-- footer section
 ======================================================================================= -->
 
-    <section class="footer" id="contact">
-        <div class="details">
-            <div class="contact text-center">
-                <h2 class="title font-sans">Contact Us</h2>
-                <p class="paragraph font-sans">theodorenkhwamba@gmail.com</p>
-                <p class="paragraph font-sans">0888288494 | 099740230 | 0888614699</p>
+    <section class="footer text-center" id="contact">
+        <div class="container position-relative h-100 d-inline-block">
+            <div class="row">
+                <div class="col-12 text-center position-absolute top-0 start-50 translate-middle-x">
+                    <h2 class="title font-sans text-light">Contact Us</h2>
+                    <p class="paragraph font-sans">theodorenkhwamba@gmail.com</p>
+                    <p class="paragraph font-sans">0888288494 | 099740230 | 0888614699</p>
+                </div>
+
+                <div class="col-12 text-center position-absolute top-50 start-50 translate-middle">
+                    <a href="#" type="button" class="btn cus-icon text-primary"><i class="fa fa-facebook"></i></a>
+                    <a href="#" type="button" class="btn cus-icon text-danger"><i class="fa fa-instagram"></i></a>
+                    <a href="#" type="button" class="btn cus-icon text-success"><i class="fa fa-whatsapp"></i></a>
+                </div>
+
+                <div class="col-12 position-absolute bottom-0 start-50 translate-middle-x">
+                    <p class="paragraph text-center font-sans">&copy; Malawi Software Development Operations 2021</p>
+                </div>
+
                 
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-whatsapp"></a>
             </div>
 
-            <div class="social-media text-center">
-            </div>
-
-            <div class="copy-right">
-                <p class="paragraph text-center font-sans">&copy; Malawi Software Development Operations 2021</p>
-            </div>
         </div>
     </section>
 
 <!-- END::footer section
 ======================================================================================= -->
 
-    <section class="image__popup-1" id="image-popup-1">
-        <a href="#section__about" class="close">&times;</a>
-        <div class="image__popup-1--view">
-            <img src="images/malsoftech-01.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup2">
+        <div class="modal-dialog modal-xl">
 
-    <section class="image__popup-2" id="image-popup-2">
-        <a href="#section__about" class="close">&times;</a>
-        <div class="image__popup-2--view">
-            <img src="images/malsof_code.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-3" id="image-popup-3">
-        <a href="#section__about" class="close">&times;</a>
-        <div class="image__popup-3--view">
-            <img src="images/SL-073119-22070-01.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-4" id="image-popup-4">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-4--view">
-            <img src="images/orphanage_home.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-5" id="image-popup-5">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-5--view">
-            <img src="images/orphanage_images.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-6" id="image-popup-6">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-6--view">
-            <img src="images/orphanage_desc.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-7" id="image-popup-7">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-7--view">
-            <img src="images/dom_home.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-8" id="image-popup-8">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-8--view">
-            <img src="images/dom_alt_img.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-9" id="image-popup-9">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-9--view">
-            <img src="images/dom_location.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-10" id="image-popup-10">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-10--view">
-            <img src="images/nkm_home.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-11" id="image-popup-11">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-11--view">
-            <img src="images/nkm_images.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <section class="image__popup-12" id="image-popup-12">
-        <a href="#projects" class="close">&times;</a>
-        <div class="image__popup-12--view">
-            <img src="images/nkm_contact.jpg" alt="photo-1" class="img-view-style">
-        </div>
-    </section>
-
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <img src="">
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+        
+            <div class="modal-body">
+                <img src="images/malsof_code.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
         </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup3">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/SL-073119-22070-01.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup4">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/orphanage_home.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup5">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/orphanage_images.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup6">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/orphanage_desc.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup7">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/dom_home.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup8">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/dom_alt_img.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup9">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/dom_location.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup10">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/nkm_home.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup11">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/nkm_images.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup12">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/nkm_contact.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- / image popup modal -->
+    <div class="modal fade" id="imagepopup">
+        <div class="modal-dialog modal-xl">
+
+            <div class="d-md-flex justify-content-md-end">
+                <button type="button" class="btn-close btn-lg bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        
+            <div class="modal-body">
+                <img src="images/malsoftech-01.jpg" alt="" style="width:100%;">
+            </div>
+        <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
     </div>
 </body>
 </html>
