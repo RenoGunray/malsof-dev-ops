@@ -45,11 +45,8 @@ body {
     background-color: #ededee;
 }
 
-@import "major-dependacies/animations";
-
 @import "selectors/variables";
 @import "selectors/utilities";
-@import "selectors/dependacies";
 
 @import "layouts/about";
 @import "layouts/meetteam";
@@ -62,3 +59,7 @@ body {
 @import "major-dependacies/buttons";
 @import "major-dependacies/grid";
 @import "major-dependacies/popups";
+
+@import "major-dependacies/animations";
+
+@import "selectors/dependacies";
